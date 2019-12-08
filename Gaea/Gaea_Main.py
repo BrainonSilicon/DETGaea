@@ -44,22 +44,38 @@ def main():
     time.sleep(5)
     pixels.fill(WHITE)
     time.sleep(0.1)
+    print ("time to close the hatch")
     Gaea_Audio.Eve_closed_hatch()
     time.sleep(5)
     pixels.fill(GREEN)
+    print ("motors about to run")
     servos[0].angle = 180
+    time.sleep(0.1)
     servos[0].angle = 10
+    time.sleep(0.1)
     servos[0].angle = 180
+    time.sleep(0.1)
     servos[0].angle = 18
+    time.sleep(0.1)
     servos[0].angle = 180
+    time.sleep(0.1)
     servos[0].angle = 18
+    time.sleep(0.1)
     servos[0].angle = 180
+    time.sleep(0.1)
     servos[0].angle = 18
+    time.sleep(0.1)
+    print ("seed about to disperse")
     servos[1].angle = 90 #seed dispersed
+    time.sleep(0.1)
     servos[0].angle = 180
+    time.sleep(0.1)
     servos[0].angle = 18
+    time.sleep(0.1)
     servos[0].angle = 180
+    time.sleep(0.1)
     servos[0].angle = 18
+    print ("motors finished")
     pixels.fill(BLUE)
     time.sleep(2)
     ####WATER SPOUT CODE
@@ -68,6 +84,7 @@ def main():
     pixels.fill(RED)
     time.sleep(0.5)
     pixels.fill(OFF)
+    print ("done running main")
     
 if __name__ == '__main__':
     main()
