@@ -1,6 +1,6 @@
 #import Pi stuff 
 import time 
-from adafruit_crickit import crikit 
+from adafruit_crickit import crickit 
 import pygame #for playing audio
 from adafruit_seesaw.neopixel import NeoPixel
 
